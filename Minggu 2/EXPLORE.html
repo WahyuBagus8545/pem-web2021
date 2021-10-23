@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eksplore</title><meta charset="utf-8">
+
+        <style>
+            .square {
+                height: 2px;
+                width: 400px;
+                background-color: rgb(231, 5, 5);
+                margin-left: 500px;
+            }
+            .box{
+                background-color: rgb(151, 151, 135);
+                width: 300px;
+                /* lebar*/
+                padding: 25px;
+                /* ruang antara content dan border */
+                border: 25px solid rgb(46, 129, 101);
+                /* Garis antara padding dan margin - ukuran stlye -color */
+                margin: 25px;
+            }
+            .pc{
+                border-style: dotted;
+                text-align: right;
+                background-color: beige;
+            }
+            #pid{
+                border-style: dotted dashed solid double;
+                /* atas kanan bawah kiri */
+                color:rgb(189, 173, 110);
+            }
+            table{
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: lavender;">
+        <h1 style="text-align: center;">EXPLORE</h1>
+
+        <div class="square"></div>
+
+        <div class="container">
+            
+            <div style='float: right'>
+                <img src="img assets/construction sign.png" width="50%" height="50%" style="border-color: white;" border= "4px";> 
+            </div>
+
+            <form style="padding-left: 10px;">
+                Nama Lengkap : <br>
+                <input type="text" name="nama_lengkap" size="55"><br><br>
+                Jenis kelamin :<br>
+                Laki laki <input type="radio" name="jenis_kelamin" value="L">
+                Perempuan <input type="radio" name="jenis_kelamin" value="P"><br><br>
+                Alamat tinggal : <br>
+                <input type="text" name="alamat_tinggal" size="55"><br><br>
+                Email : <br>
+                <input type="text" name="email" size="55"><br><br>
+                Aktif Pada Sosial Media :<br>
+                <input type="checkbox" name="facebook" value="Ya"> Facebook 
+                <input type="checkbox" name="Twitter" value="Ya"> Twitter
+                <input type="checkbox" name="instagram" value="Ya"> Instagram
+                <input type="checkbox" name="path" value="Ya"> Path <br><br>
+                Mengetahui web ini dari : <br>
+                <select name="info">
+                    <option selected="select">-=Pilih=-</option>
+                    <option value="web udinus">Web udinus</option>
+                    <option value="Surat_kabar">Surat kabar</option>
+                    <option value="teman">teman</option>
+                    <option value="browsing">browsing</option>
+                </select>
+                <br><br>
+                Pesan : <br>
+                <textarea name="pesan" cols="40" rows="3"></textarea><br><br>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Batal" >
+            </form>
+            
+            <p>Box model CSS terdiri dari konten, margin, border, dan padding</p>
+            <div style="background-color: rgb(136, 19, 19); color: rgb(204, 202, 200); width: 80%;" class="box">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sunt deserunt tempore, impedit voluptatibus inventore iure doloribus soluta facere asperiores fugit assumenda atque natus perferendis blanditiis alias minus laboriosam totam.
+            </div>
+            <p class="pc">Paragraf dengan selector class</p>
+            <p id="pid">Paragraf dengan selector id</p>
+
+            <h2>Profilku</h2>
+        <!--Nama : Mohammad Wahyu Bagus Dwi Satya <br>
+        Tempat, Tanggal Lahir : Kudus, 25 Juli 2003 <br>-->
+        <table border="2">
+            <tr style="background-color: azure;">
+                <th colspan="3"> Mohammad Wahyu Bagus Dwi Satya</th>
+            </tr>
+            <tr style="background-color: azure;">
+                <td>Tempat, Tanggal Lahir</td>
+                <td>:</td>
+                <td> Kudus, 25 Juli 2003</td>
+            </tr>
+            <tr style="background-color: azure;">
+                <td>Hobi</td>
+                <td>:</td>
+                <td> Menggambar</td>
+            </tr>
+            <tr style="background-color: azure;">
+                <td rowspan="2">Makanan favorit</td>
+                <td rowspan="2">:</td>
+                <td> Bakso</td>
+            </tr>
+            <tr style="background-color: azure;">
+                <td> Mie rebus</td>
+        </table>
+    </body>
+
+</html>
