@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: #E6DBAF;
+}
+nav{
+    background: #dad2eef3;
+    padding: 10px 40px 10px 70px;
+    clear: both;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 5;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+nav ul div.items{
+    padding:  0 25px;
+    display: inline-flex;
+    font-weight: 400;
+}
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+    color: black;
+}
+nav ul div.items a:hover{
+  color: #744646;
+  transition: all 0.3s ease 0s;
+}
+nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+    background: #e6e6e6e6;
+}
+nav ul .search-icon .icon span{
+    color: #222222;
+    font-size: 18px;
+}
+.search-icon img{
+    height: 20px;
+    width: 20px;
+}
+
+
+.footer{
+    background-color: #826363;
+    height: 4cm;
+  }
+  .footer h3{
+    margin: 10px;
+    color: white;
+    text-shadow: 5px 5px #423a3a73;
+    padding-top: 20px;
+  }
+  .footer h3, img{
+    display: inline-block;
+  }
+  .footer #sns{
+    float: right;
+    padding-top: 20px;
+  }
+  .footer #sns img{
+    height: 4%;
+    width: 4%;
+    padding: 6px;
+    float: right;
+  }
+  #sns img{
+    transition: all 0.3s ease 0s;
+  }
+  #sns a:hover img{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+  }
+  .footer p{
+    margin-left: 10px;
+  }
+  .footer #cr{
+    text-align: center;
+    color: white;
+    padding-bottom: 0px;
+  }
